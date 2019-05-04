@@ -1,48 +1,32 @@
 body {
-	background-image: url("images/background.png");
+    background-image: url("images/background.png");
+    width: 960px;
+    margin: auto
 }
 
-a {
-	color: #777777;
-	text-decoration: none;
+.navbar-brand {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 2.2em;
 }
 
-a:hover {
-	color: #000;
-	text-decoration: none;
-}
-
-.navbar-header {
-	font-family: 'Georgia', Times, Times New Roman, serif;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
-}
-
-.navbar-default {
-    background-color: #4aaaa5;
-    border: solid 2px #777777;
-}
-
-.navbar-default .navbar-brand {
-    color: #fff;
-    font-size: 32px;
-    text-align: center;	
-    padding: 15px 50px;
-    float: none;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #fff;
+.navbar {
+    border: solid 2px #4aaaa5;
+    border-radius: 4px;
+    width: 100%
 }
 
 #connect {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding-top: 10px;
 	height: 150px;
 	background: #fff;
     text-align: center;
     border: solid 2px #777777;
     border-radius: 4px;
+}
+
+#connect.col-sm-4 {
+    margin: 3em 0;
 }
 
 #connect h3 {
@@ -62,9 +46,10 @@ a:hover {
 }
 
 #footer {
-	background: #666666;
+	background: #383837;
     height: 100%;
     width: 100%;
+    margin-left: 0;
     text-align: center;
     line-height: 70px;
     color: #fff;
@@ -72,11 +57,16 @@ a:hover {
 }
 
 #about {
-	margin: 30px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     background: #fff;
     border: solid 2px #777777;
     border-radius: 4px;
 }
+
+#about.col-sm-8 {
+    margin: 3em 0;
+}
+
 
 #about h2 {
 	font-size: 1.7em;
@@ -91,7 +81,11 @@ a:hover {
 }
 
 #about img {
-	margin: 15px;	
+    height: 80%;
+    width: 45%;
+    margin: 5px 15px;
+    padding: 10px 0 0 10px;
+    float: left;
 }
 
 #about p {
@@ -107,16 +101,20 @@ ul {
 }
 
 #portfolio {
-	margin: 35px 13% 35px 13%;
 	background: #fff;
     overflow: auto;
     border: solid 2px #777777;
 }
 
+#portfolio.col-sm-8 {
+    margin: 3em 0;
+}
+
 #portfolio h2 {
-	font-size: 1.7em;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 2em;
 	font-weight: bold;
-	padding: 0px 0px 0px 15px;
+	padding: 10px 0px 0px 15px;
 	color: #4aaaa5;
 }
 
@@ -127,14 +125,19 @@ ul {
 
 #portfolio li {
 	list-style: none;
-	width: 90%;
 	height: 200px;
-	margin: 15px 5% 20px 5%;
+    width: 45%;
+    margin: 10px 0px 10px 20px;
+    float: left;
 }
 
 #portfolio img {
 	width: 100%;
 	height: 100%;
+}
+
+#portfolio img:hover {
+    opacity: 0.7;
 }
 
 .portLabel {
@@ -144,13 +147,16 @@ ul {
 	text-align: center;
 	position: relative;
 	bottom: 53px;
-
 }
 
 #contact {
-	margin: 35px 13% 35px 13%;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     background: #fff;
     border: solid 2px #777777;
+}
+
+#contact.col-sm-8 {
+    margin: 3em 0;
 }
 
 #contact h2 {
@@ -235,92 +241,4 @@ ul {
 #submit:active {
     background-color: #666666;
     color: #000;
-}
-
-@media (min-width: 560px) {
-
-	#about {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
-
-	#about img {
-		width: 45%;;
-		margin: 5px 18px 20px 18px;
-		float: left;
-	}
-
-	#about p {
-		padding: 0px;
-	}
-
-	#connect {
-		width: 80%;
-		margin: 15px 0% 15px 10%;
-		height: 160px;
-	}
-
-	#connect h3 {
-		padding: 0px 0px 0px 15px;
-	}
-
-	#contact {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
-
-	#portfolio {
-		margin: 15px 0% 15px 10%;
-    	width: 80%;
-	}
-
-	#portfolio li {
-		width: 45%;
-	    margin: 10px 0px 10px 20px;
-	    float: left;
-	}
-
-	#footer {
-		width: 90%;
-	    margin-left: 5%;
-	    border-radius: 5px;
-	}
-
-
-}
-
-@media (min-width: 992px) {
-
-	#about {
-		margin: 15px -6% 60px 10%;
-    	width: 50%;
-	}
-
-	#connect {
-		width: 25%;
-	}
-
-	#contact {
-    	width: 50%;
-    	margin: 15px -6% 50px 10%;
-
-	}
-
-	#portfolio {
-    	width: 50%;
-    	margin: 15px -6% 60px 10%;
-
-	}
-
-	#portfolio li {
-		width: 45%;
-	}
-
-	#footer {
-		width: 90%;
-	    margin-left: 5%;
-	    border-radius: 3px;
-	}
-
-
 }
